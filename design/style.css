@@ -1,0 +1,225 @@
+/* the styling  of the html body */
+body{
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-weight: 500 700 800;
+    display:grid;
+    place-items:center;
+    min-height: 100vh;
+    
+}
+
+
+/* giving font size to all the paragraphs in the index file */
+p{
+    font-size:1.125rem; 
+}
+
+/* giving size to all the headings one in the index file */
+h1{
+  font-size:1.75rem;
+}
+
+/* adjusting the h3 headings in the summary section with the SVGs using flex grow */
+h3{
+
+  flex-grow: 0.9;
+}
+
+/* ========================================================================================== */
+
+/* button formatting start using the button class mentioned in the button tag */
+.btn-c {
+  display:block;
+    width: 100%;
+    -webkit-border-radius: 60;
+  -moz-border-radius: 60;
+  border-radius: 100vw;
+  color: #ffffff;
+  font-size: 1rem;
+  background: #050505;
+  padding: 0.625rem 2.5rem 0.625rem 2.5rem;
+  text-align: center;
+  margin-top:2rem;
+
+}
+  
+  .btn-c:hover {
+    background: hsla(252, 100%, 67%);
+    background-image: -webkit-linear-gradient(top, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    background-image: -moz-linear-gradient(top, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    background-image: -ms-linear-gradient(top, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    background-image: -o-linear-gradient(top, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    background-image: linear-gradient(to bottom, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    background-image: linear-gradient(border-left, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    text-decoration: none;
+  }
+
+  /* Button Formatting End */
+
+  /* ======================================================================================== */
+
+  /* Main Container which includes Result section, Summary section and the button */
+
+  .main-container
+  {
+    max-width:40rem;
+    display:grid;
+    gap:1rem; 
+    padding-right: 1rem;
+    
+  }
+  
+  /* Media query to adjust the grid in columns when showing on large screen sizes */
+
+  @media (min-width:600px){
+
+    .main-container{
+
+    grid-template-columns: 1fr 1fr;
+    border-radius: 2rem;
+    box-shadow: .5rem 1rem 3rem;
+    }
+  }
+
+/* ================================================================================================ */
+
+  /* Result section */
+
+  .result{
+    color: hsla(0, 0%, 100%,  .7);
+    background-image:linear-gradient(hsl(252, 100%, 67%),hsl(241, 81%, 54%));
+    text-align:  center;
+    border-radius: 2rem;
+    display:grid;
+    justify-content: space-evenly;
+    gap:2rem;
+}
+
+ /* media query for the result section to remove the boder radius of the grid on top right and left when showing on small screens */
+
+
+@media (max-width:600px){
+.result{
+
+  border-top-right-radius:0%;
+    border-top-left-radius:0%;
+}
+
+}
+
+/* settings for the circle shown in the result section of the main result grid */
+
+.your-score{
+    display:grid;
+    align-content:center;
+    width:12rem;
+    margin-inline:auto;
+    border-radius: 50%;
+    aspect-ratio: 1/1;
+    background: radial-gradient(hsla(256, 72%, 46%, 1),hsla(241, 72%, 46%, 0));
+    
+
+}
+
+/* setting for Span element in the shown in the result section */
+
+.your-score span{
+
+    display:block;
+    color:hsl(0, 0%, 100%);
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+/* result-bottom-section */
+
+.result-bottom-section{
+
+   padding:0 2rem; 
+}
+
+/* setting for the span used in the bottom paragraphs of the result section */
+
+.result-bottom-section span {
+  display:block;
+  color:hsl(0, 0%, 100%);
+  font-weight: bold;
+  font-size: 1.5rem;  
+}
+
+/* ============================================================================== */
+
+/* Summary Section */
+
+.summary-details{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  border-radius: 1rem;
+  padding:0.2rem;
+  margin-bottom: 1rem; 
+}
+/* adding background and text color to details */
+.summary-detail-1{
+  background-color: hsla(0, 100%, 67%, 0.1);
+}
+
+/* giving color to h3 heading */
+
+.color-1{
+  color:hsla(0, 100%, 67%);
+}
+
+
+/* adding background and text color to details */
+.summary-detail-2{
+  background-color: hsla(39, 100%, 56%, 0.1);
+}
+/* giving color to h3 heading */
+.color-2{
+  color:hsla(39, 100%, 56%);
+}
+
+
+/* adding background and text color to details */
+.summary-detail-3{
+  background-color: hsla(166, 100%, 37%, 0.1);
+}
+/* giving color to h3 heading */
+.color-3{
+  color:hsla(166, 100%, 37%);
+}
+
+
+/* adding background and text color to details */
+.summary-detail-4{
+  background-color: hsla(234, 85%, 45%, 0.1);
+}
+/* giving color to h3 heading */
+.color-4{
+  color:hsla(234, 85%, 45%);
+}
+
+
+/* giving padding to svg icons on summary section */
+
+.summary-details svg{
+  padding-left:0.5rem;
+}
+
+
+/* give score a bold and color change also in summary section */
+
+.s-score{
+  font-weight:bold;
+  color:hsl(224, 30%, 27%);
+}
+
+/* setting color and padding to the scores on the summary section */ 
+.summary-details p{
+
+  color:hsla(224, 30%, 27%, .5);
+  padding-right: 0.5rem;
+}
+
+/* ============================end of styling========================================= */
